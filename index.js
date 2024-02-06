@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 });
 app.use('/api', Routes);
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
-DefaultData();
+//DefaultData();
 
 
 
