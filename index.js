@@ -12,7 +12,8 @@ dotenv.config();
 const app = express();
 
 const PORT = process.env.PORT ||  8000;
-const db = process.env.DB_URI;
+//const db = process.env.DB_URI;
+const db= `mongodb+srv://mateshwari33:zkXw3yGxrRz43DiC@interviewproinfo.drq8dig.mongodb.net/?retryWrites=true&w=majority`
 Connection(db);
 
 app.use(bodyParser.json({ extended: true }));
