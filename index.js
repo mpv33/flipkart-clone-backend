@@ -3,7 +3,9 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import Connection from './database/db.js';
-import Routes from './routes/route.js';
+import userRoutes from './routes/userRoutes.js';
+import productRoutes from './routes/productRoutes.js';
+import DefaultData from './default.js'
 
 dotenv.config();
 const app = express();
@@ -25,9 +27,11 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('flipkart clone products API running');
+  res.send('flipkart clone  API running');
 });
 
-app.use('/api', Routes);
+app.use('/api', userRoutes);
+app.use('/api', productRoutes);
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
+//DefaultData()

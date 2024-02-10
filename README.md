@@ -10,14 +10,8 @@ Welcome to the backend repository of the Flipkart Clone project. This repository
 To run the backend server locally or in a production environment, you need to set up the following environment variables:
 
 - **DB_URI**: MongoDB url for database access.
-- **PAYTM_MID**: Paytm Merchant ID.
-- **PAYTM_WEBSITE**: Paytm website name.
-- **PAYTM_CHANNEL_ID**: Paytm channel ID.
-- **PAYTM_INDUSTRY_TYPE_ID**: Paytm industry type ID.
-- **PAYTM_CUST_ID**: Paytm customer ID.
-- **PAYTM_MERCHANT_KEY**: Paytm merchant key.
-- **FRONTEND_URL**: Frontend URL for redirecting after payment completion.
-- **PORT**: Port on which the backend server will run.
+
+## Live : https://flipkart-clone-server-m.vercel.app 
 
 ## Getting Started
 
